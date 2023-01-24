@@ -1,0 +1,8 @@
+let age = prompt('How old are you?', '')
+
+if (Boolean(age) === true) {
+  alert(`Your age is ${age}`)
+}
+if (Boolean(age) === false) {
+  alert (`Ok, have a nice day!`)
+}
