@@ -1,4 +1,4 @@
-const deleteFunction = (str) => {
+const camelize = (str) => {
     let arr = str.split('')
     arr.splice(arr.indexOf('-'), 1, '')
     arr.splice(arr.indexOf('-'), 1, '')
@@ -8,4 +8,4 @@ const deleteFunction = (str) => {
 
 let str = "-webkit-transition"
 
-alert(deleteFunction(str))
+alert(camelize(str))
