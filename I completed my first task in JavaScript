@@ -1,0 +1,11 @@
+const deleteFunction = (str) => {
+    let arr = str.split('')
+    arr.splice(arr.indexOf('-'), 1, '')
+    arr.splice(arr.indexOf('-'), 1, '')
+    let newStr = arr.join('')
+    return newStr
+}
+
+let str = "-webkit-transition"
+
+alert(deleteFunction(str))
