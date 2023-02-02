@@ -1,0 +1,10 @@
+class Post {
+    constructor(text, size) {
+        this.text = text
+        this.size = size
+        this.likesQty = 0
+    }
+    upLikes() {
+        this.likesQty +=1
+    }
+}
