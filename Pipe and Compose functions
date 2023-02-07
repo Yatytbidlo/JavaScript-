@@ -1,0 +1,7 @@
+function compose(...fns){
+    return (x) => reduceRight((v,f)=> f(v), x)
+    }
+    
+function pipe(...fns) {
+    return (x) => fns.reduce((v,f) => f(v), x)
+}
