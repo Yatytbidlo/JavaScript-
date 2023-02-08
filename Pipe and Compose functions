@@ -5,3 +5,12 @@ function compose(...fns){
 function pipe(...fns) {
     return (x) => fns.reduce((v,f) => f(v), x)
 }
+
+function partial(fn, apply) {
+    return (...args) => fn(...apply, args)
+}
+
+function curry(fn) {
+    return (...args) => args.length >= fn.length ?
+        fn(...args) : curry(fn.bind(null,args))
+}
